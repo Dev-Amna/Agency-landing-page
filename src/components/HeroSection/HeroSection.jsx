@@ -1,11 +1,15 @@
-import React from 'react'
-
+import React from "react";
+import "./HeroSection.css";
+import arrowIcon from "../../assets/images/icon-arrow-down.svg";
 function HeroSection() {
   return (
-    <div>
-      <h2>I'm HeroSection</h2>
+    <div className="hero-section">
+      <div className="heading">
+        <h1>WE ARE CREATIVES</h1>
+      </div>
+      <img src={arrowIcon} alt="header image" />
     </div>
-  )
+  );
 }
 
-export default HeroSection
+export default HeroSection;
