@@ -1,0 +1,92 @@
+nav {
+  padding: 2rem;
+  background-color: red;
+    width: 100%;
+    width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+}
+
+ul {
+  display: flex !important;
+  align-items: center;
+  gap: 3rem;
+}
+
+li {
+  list-style: none;
+}
+ 
+
+.contact-btn {
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  background-color: white;
+  color: black;
+  transition: all 0.2s ease-in;
+}
+
+.contact-btn a {
+  color: hsl(212, 27%, 19%) !important;
+  font-family: "Fraunces", serif !important;
+}
+.active {
+  display: block;
+}
+
+.menuIcon{
+    display: none;
+    cursor: pointer;
+}
+@media (max-width: 655px) {
+  ul {
+    position: absolute;
+    top: -435%;
+    background-color: hsl(0, 100%, 100%);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+    z-index: 2000;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  ul::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    transform: rotate(45deg);
+    z-index: -1;
+  }
+
+  .active {
+    top: 135%;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+   li a {
+        color: hsl(213, 9%, 39%);
+        font-size: 20px;
+    }
+
+    .contact-btn {
+       
+        font-weight: 500;
+        background-color: hsl(51, 100%, 49%);
+    }
+
+    .contact-btn:hover {
+        background-color: hsl(212, 27%, 19%);
+    }
+}
