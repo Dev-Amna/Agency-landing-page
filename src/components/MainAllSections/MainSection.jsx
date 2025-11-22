@@ -1,7 +1,8 @@
 import React from "react";
 import "./MainSection.css";
 import TestimonialsSection from "./TestimonialsSection";
-
+import GalleryImages from "./GalleryImages";
+import Footer from './Footer'
 function StandOutSection() {
   return (
     <>
@@ -119,6 +120,8 @@ function StandOutSection() {
         </div>
       </section>
       <TestimonialsSection />
+      <GalleryImages/>
+      <Footer />
     </>
   );
 }
