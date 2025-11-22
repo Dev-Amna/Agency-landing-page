@@ -1,5 +1,6 @@
 import React from "react";
 import "./MainSection.css";
+import TestimonialsSection from "./TestimonialsSection";
 
 function StandOutSection() {
   return (
@@ -117,6 +118,7 @@ function StandOutSection() {
        </div>
         </div>
       </section>
+      <TestimonialsSection />
     </>
   );
 }

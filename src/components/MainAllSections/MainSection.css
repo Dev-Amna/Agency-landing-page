@@ -88,3 +88,8 @@
     height: auto;
   }
 }
+
+/* TestimonialsSection */
+.TestimonialsSection{
+  display: flex;
+}
