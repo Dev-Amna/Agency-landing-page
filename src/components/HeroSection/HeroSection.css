@@ -1,28 +1,68 @@
-.hero-section{
+.hero-section {
     background-image: url("../assets/desktop/image-header.jpg");
-    background-size: cover;
+    background-size: cover;       /* cover entire section */
+    background-position: center;  /* center the image */
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center ;
+    justify-content: center;
     flex-direction: column;
+    padding: 0 1rem;             /* small padding for mobile */
+    box-sizing: border-box;
 }
 
-.heading{
+/* Heading */
+.heading {
     font-size: 2.88rem;
     word-spacing: 2px;
     color: white;
+    text-align: center;
+    padding: 0 1rem;
 }
 
+/* Arrow animation */
 .hero-section img {
     display: block;
     margin-bottom: 5rem;
+    animation: floatArrow 2s ease-in-out infinite;
 }
 
-@media (max-width:420px) {
-    .hero-section h1 {
+/* Keyframes for smooth float */
+@keyframes floatArrow {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(8px); }
+    50% { transform: translateY(16px); }
+    75% { transform: translateY(8px); }
+    100% { transform: translateY(0); }
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .hero-section {
+        background-image: url("../assets/mobile/image-header.jpg"); 
+        height: 80vh;
+        padding: 0 0.5rem;
+    }
+
+    .heading {
+        font-size: 2rem;
+    }
+
+    .hero-section img {
+        margin-bottom: 3rem;
+        width: 40px; 
+    }
+}
+
+@media (max-width: 420px) {
+    .heading {
         font-size: 28px;
+    }
+
+    .hero-section img {
+        margin-bottom: 2rem;
+        width: 35px;
     }
 }
