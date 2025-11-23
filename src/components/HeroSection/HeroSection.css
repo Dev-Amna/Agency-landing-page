@@ -1,7 +1,7 @@
 .hero-section {
     background-image: url("../assets/desktop/image-header.jpg");
-    background-size: cover;       /* cover entire section */
-    background-position: center;  /* center the image */
+    background-size: cover;     
+    background-position: center; 
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 1rem;             /* small padding for mobile */
+    padding: 0 1rem;           
     box-sizing: border-box;
 }
 
