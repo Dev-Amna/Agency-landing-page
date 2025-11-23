@@ -86,12 +86,10 @@ li {
     }
 
     .contact-btn {
-       
+       cursor: pointer;
         font-weight: 500;
         background-color: hsl(51, 100%, 49%);
     }
 
-    .contact-btn:hover {
-        background-color: hsl(212, 27%, 19%);
-    }
+    
 }
