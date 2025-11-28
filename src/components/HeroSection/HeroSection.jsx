@@ -1,3 +1,4 @@
+// HeroSection.jsx
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -10,13 +11,12 @@ function HeroSection() {
   }, []);
 
   return (
-    <div className="hero-section">
-      <div className="heading">
+    <section className="hero-section">
+      <header className="heading">
         <h1 data-aos="fade-down">WE ARE CREATIVES</h1>
-      </div>
-
-      <img src={arrowIcon} alt="header image" />
-    </div>
+      </header>
+      <img src={arrowIcon} alt="Scroll down indicator arrow" />
+    </section>
   );
 }
 

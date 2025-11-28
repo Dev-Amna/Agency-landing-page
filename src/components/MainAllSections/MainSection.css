@@ -225,10 +225,11 @@
   color: #25564b;
 }
 
-.social-links{
+.social-links {
   display: flex;
   gap: 2rem;
 }
-.link a ,.social-links img{
+
+.link a, .social-links img {
   cursor: pointer;
 }
