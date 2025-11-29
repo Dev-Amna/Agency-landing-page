@@ -12,11 +12,11 @@ function FooterSection() {
       <section className="footer">
         <h2>Sunnyside</h2>
 
-        <nav className="link">
+        <div className="link">
           <a href="#">About</a>
           <a href="#">Services</a>
           <a href="#">Projects</a>
-        </nav>
+        </div>
 
         <section className="social-links">
           <img src={facebookIcon} alt="Facebook icon" />

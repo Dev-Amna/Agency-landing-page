@@ -207,7 +207,7 @@
 
 /* Footer */
 .footer {
-  padding: 2rem 0;
+  padding: 2rem 1rem; /* add horizontal padding for small screens */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -215,19 +215,25 @@
   background-color: #96eedb;
   gap: 2rem;
   color: #25564b;
+  overflow-x: hidden; /* prevent any accidental horizontal overflow */
 }
 
 .link {
   display: flex;
-  gap: 5rem;
+  flex-wrap: wrap; 
+  justify-content: center;
+  gap: 2rem; 
 }
+
 .link a {
   color: #25564b;
+  text-decoration: none;
+  white-space: nowrap; 
 }
 
 .social-links {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .link a, .social-links img {
